@@ -11,6 +11,7 @@
     font-weight: normal;
 }
 
+/*Header*/
 body {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +21,7 @@ body {
 
 header {
     background-color: #d62400;
-    color: white;
+    color: rgb(242,237,214);
     text-align: center;
     padding: 10px;
 }
@@ -29,4 +30,70 @@ header h1 {
     font-size: calc(1.625rem + 4.5vw);
     line-height: 1.2;
     font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    background-color: #2b0200;
+    color: #f5ebdc;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+footer h2 {
+    line-height: 1.5;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+footer #social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #social ul{
+    list-style: none;
+}
+
+footer #social ul li {
+    float: left;
+    margin-left: 24px;
+}
+
+footer ul li i{
+    cursor: pointer;
+}
+
+footer #links ul {
+    width: 450px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -36px;   
+}
+
+footer #links ul li {
+    float: left;
+}
+
+footer #links ul span {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 566px) {
+    footer {
+        padding: 12px;
+    }
+
+    footer #social ul li {
+        margin-left: 12px;
+    }
+
+    footer #links ul {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
