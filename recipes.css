@@ -53,6 +53,13 @@ img {
     justify-content: center;
 }
 
+.image_holder_2 {
+    background-color: #502314;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 main h3 {
     font-size: 2rem;
     text-align: center;
@@ -64,6 +71,8 @@ main h3 {
 .desc {
     padding: 24px;
     margin-top: -50px;
+    max-width: 90%;
+    min-width: 50%;
 }
 
 .desc h4 {
@@ -73,6 +82,14 @@ main h3 {
 
 .desc p,.desc ul,.desc ol{
     margin-bottom: 50px;
+}
+
+.desc p {
+    margin-left: 1.5rem;
+}
+
+.desc li{
+    margin-bottom: 10px;
 }
 
 /*Footer*/
