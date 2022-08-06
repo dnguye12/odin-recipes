@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("fonts/HelveticaNeue Medium.ttf");
+    src: url("/fonts/HelveticaNeue Medium.ttf");
     font-weight: normal;
 }
 
@@ -38,42 +38,41 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.row {
-    width: calc(600px + 4em);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.row-first {
-    margin-bottom: -4em;
-}
-
-.row-second {
-    margin-bottom: -1em;
-}
-
-.card {
-    cursor: pointer;
-    text-align: center;
-    margin-top: 3em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
-
-.card img {
+img {
     height: 300px;
+    
 }
 
-.card h3 {
-    position: relative;
-    background-color: white;
+.image_holder_1 {
+    background-color: #FF8733;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main h3 {
     font-size: 2rem;
-    padding: 20px;
-    top: -35px;
+    text-align: center;
+    position: relative;
+    top: -25px;
+    padding: 12px 85px;
+}
+
+.desc {
+    padding: 24px;
+    margin-top: -50px;
+}
+
+.desc h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.desc p,.desc ul,.desc ol{
+    margin-bottom: 50px;
 }
 
 /*Footer*/
@@ -127,31 +126,7 @@ footer #links ul span {
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-        width: 100%;
-        
-    }
-    
-    .card {
-        text-align: center;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: -4.1em;
-    }
-    
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 @media only screen and (max-width: 566px) {
-    
-
-
-
 
     footer {
         padding: 12px;
